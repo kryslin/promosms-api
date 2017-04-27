@@ -1,5 +1,5 @@
 {
-    "name": "norzechowicz/promosms-api",
+    "name": "kryslin/promosms-api",
     "type": "library",
     "description": "PromoSMS.pl API client.",
     "keywords": ["promosms", "api", "client", "sms"],
