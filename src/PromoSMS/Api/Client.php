@@ -164,6 +164,7 @@ class Client
             'to' =>  $sms->getReceiver(),
             'message' => $sms->getMessage(),
             'type' => $sms->getType(),
+            'from' => $sms->getFrom(),
             'return' => 'xml'
         );
 

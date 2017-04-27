@@ -2,7 +2,7 @@
 
 namespace PromoSMS\Api\Sms;
 
-class Sms implements SmsInterface
+class FasterSms implements SmsInterface
 {
     /**
      * @var string|null
@@ -34,6 +34,11 @@ class Sms implements SmsInterface
      */
     protected $abroad;
 
+    /**
+     * @var string
+     */
+    protected $from;
+
     public function __construct()
     {
         $this->single = true;
@@ -46,7 +51,7 @@ class Sms implements SmsInterface
      */
     public function getType()
     {
-        return 'sms';
+        return 'faster';
     }
 
     /**
@@ -54,7 +59,15 @@ class Sms implements SmsInterface
      */
     public function getFrom()
     {
-        return '';
+        return $this->from;
+    }
+
+    /**
+     * @param $from
+     */
+    public function setFrom($from)
+    {
+        $this->from = $from;
     }
 
     /**

@@ -67,4 +67,14 @@ interface SmsInterface
      * @return string
      */
     function getType();
+
+    /**
+     * @return string
+     */
+    function getFrom();
+
+    /**
+     * @param $from
+     */
+    function setFrom($from);
 }
